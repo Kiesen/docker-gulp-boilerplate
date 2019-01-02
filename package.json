@@ -1,0 +1,36 @@
+{
+  "name": "docker-gulp-boilerplate",
+  "version": "1.0.0",
+  "description": "Simple boilerplate with browser sync, for a html frontend",
+  "main": "N/D",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "keywords": [
+    "docker",
+    "gulp",
+    "node",
+    "npm",
+    "html",
+    "sass",
+    "js"
+  ],
+  "author": "Frederik Aulich",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1"
+  },
+  "dependencies": {}
+}
