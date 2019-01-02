@@ -71,8 +71,6 @@ docker run -ti -p 127.0.0.1:4000:4000 -v ${PWD}/src:/usr/src/src docker-gulp npm
 
 * **Frederik Aulich** - *Initial work* - [Kiesen](https://github.com/Kiesen)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
