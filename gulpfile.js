@@ -8,7 +8,7 @@ var browserSync = require('browser-sync');
 
 // Define the public output path
 var publicOutputPath = 'public/';
-var assetsOutputPath = publicOutputPath + 'asstes/';
+var assetsOutputPath = publicOutputPath + 'assets/';
 
 // Concat and minify scripts
 gulp.task('js', function() {
@@ -70,6 +70,13 @@ gulp.task('default', gulp.series(
   )
 );
 
+gulp.task('startBrowsersync', function() {
+  browserSync.init({
+    server: "./public",
+    port: 4000
+  });
+})
+
 // Browser sync and serve tasks 
 gulp.task('watch',  gulp.series(
     'clean',
@@ -78,12 +85,7 @@ gulp.task('watch',  gulp.series(
       'sass',
       'js',
       'watch',
-      function() {
-        browserSync.init({
-          server: "./public",
-          port: 4000
-        });
-      }
+      'startBrowsersync'
     )
   )
 )
