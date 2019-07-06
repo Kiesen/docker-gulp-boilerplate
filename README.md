@@ -2,13 +2,16 @@
 
 A very basic project setup for a html / js / sass frontend using node and/or docker for the development and build process.
 
+## Note
+These project is not under active development and maintenance. It is possible that some node modules are outdated. Feel free to create a new pull request with updated depedencies if needed.  
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and building purposes. 
 
 ### Prerequisites
 
-* `node.js >= 11.4.0` **(IF YOU WANT TO USE YOUR LOCAL NODE ENVIRONMENT)**
+* `node === 11.4.0` **(IF YOU WANT TO USE YOUR LOCAL NODE ENVIRONMENT)**
 * `docker >= 18.09.0` **(IF YOU WANT TO USE DOCKER)**
 
 Version below the prerequisites verions may work but are not tested
