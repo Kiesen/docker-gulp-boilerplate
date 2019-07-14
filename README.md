@@ -1,4 +1,8 @@
-# Docker-gulp-boilerplate
+Docker-gulp-boilerplate
+===========
+
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Kiesen/docker-gulp-boilerplate/LICENSE) [![dependencies](https://david-dm.org/Kiesen/docker-gulp-boilerplate.svg)](https://david-dm.org/Kiesen/docker-gulp-boilerplate.svg) [![devDependencies](https://david-dm.org/Kiesen/docker-gulp-boilerplate/dev-status.svg)](https://david-dm.org/Kiesen/docker-gulp-boilerplate/dev-status.svg)
 
 A very basic project setup for a html / js / sass frontend using node and/or docker for the development and build process.
 
