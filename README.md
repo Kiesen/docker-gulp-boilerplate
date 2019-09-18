@@ -7,7 +7,7 @@ Docker-gulp-boilerplate
 A very basic project setup for a html / js / sass frontend using node and/or docker for the development and build process.
 
 ## Note
-These project is not under active development and maintenance. It is possible that some node modules are outdated. Feel free to create a new pull request with updated depedencies if needed.  
+These project is not under active development and maintenance.  
 
 ## Getting Started
 
@@ -20,19 +20,30 @@ These instructions will get you a copy of the project up and running on your loc
 
 Version below the prerequisites verions may work but are not tested
 
-### Installing
+### Installation
 
 #### With node
 
-First install all node packages with npm:
+Install all node packages with npm:
 
 ```
 npm install
+``` 
+
+#### With docker
+
+With docker you first need to build the image. Execute in the project directory:
+
+```
+docker build -t docker-gulp . 
 ```
 
-After a succesfull installation of the dependencies you are able to start a local development server,
-which will running on localhost:4000. The server has also browser sync enabled and your browser should
-live reload every time you will change the code base in the `src/` directory. 
+### Usage 
+
+#### With node 
+After a succesfull installation you are able to start a local development server
+which will running on port 4000. The server has browser sync enabled and your browser should
+live reload every time you will change the code base in the `src/` directory.
 
 ```
 npm run watch
@@ -44,18 +55,10 @@ Also you are able to make a build of the project with:
 npm run build
 ```
 
-The output files will be located in the `public/` direcotry.   
+The output files will be located in the `public/` direcotry.  
 
-
-#### With docker
-
-With docker you first need to build the image. Execute in the project directory:
-
-```
-docker build -t docker-gulp . 
-```
-
-After the image is successfull build you are able to build the project with docker:
+#### With docker 
+After the docker image is successfull build you are able to start an gulp build on the docker image:
 
 ```
 docker run -it -v ${PWD}/public:/usr/src/public docker-gulp
